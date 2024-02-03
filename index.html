@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <main>
@@ -12,19 +13,23 @@
             <div id="container__texto__recebido" class="container__texto">
                 <textarea name="texto__recebido" id="texto__recebido" cols="30" rows="4" placeholder="Digite seu texto..."></textarea>
                 <div id="texto__recebido__botoes">
-                    <button>Criptografar</button>
-                    <button>Descriptorgrafar</button>
+                    <button id="btnCriptografar">Criptografar</button>
+                    <button id="btnDescriptografar">Descriptografar</button>
                 </div>
             </div>
             <div id="container__texto__enviado" class="container__texto">
                 <div id="texto__enviado">
-                    
+                    <p id="texto__enviado__p"></p>
                 </div>
                 <div id="texto__enviado__botoes">
-                    <button>Copiar</button>
+                    <button id="btnCopiar">Copiar</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer id="rodape">
+        <p>Desenvolvido por <a href="https://github.com/carla11235813">Carla Oliveira</a></p>
+    </footer>
 </body>
 </html>

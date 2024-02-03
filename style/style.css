@@ -21,23 +21,33 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 93vh;
     background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
-/*    background-size: 300% 300%;
-    animation: colors 5s ease infinite; */
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite; 
 }
 
 #container {
     width: 600px;
     height: 400px;
 
-    background-color: #38423B;
+    background-color: #2B2B2B;
 
     padding:30px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    gap: 20px;
+}
+
+#texto__enviado {
+    overflow-y: scroll;
+}
+
+#texto__enviado::-webkit-scrollbar {
+    display: none;
 }
 
 textarea, #texto__enviado {
@@ -49,8 +59,8 @@ textarea, #texto__enviado {
     font-size: 1.3rem;
     resize: none;
 
-    width: 30em;
-    height: 7em;
+    width: 30rem;
+    height: 10rem;
 }
 
 textarea:focus {
@@ -94,6 +104,25 @@ textarea:focus {
     animation: colors 5s ease infinite;
 }
 
+#rodape {
+    background-color: #2B2B2B;
+    color: #fff;
+    padding: 1rem;
+}
+
+#rodape p {
+    text-align: center;
+}
+
+#rodape a {
+    color: #8a2be2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
 
 
 @keyframes colors {
@@ -113,10 +142,10 @@ textarea:focus {
 
 @media screen and (max-width: 800px) {
     #container {
-        width: 70%;
+        width: 80%;
         height: 90%;
         box-sizing: border-box;
-
+        padding: 20px;
     }
     .container__texto {
         flex-direction: column;
@@ -128,6 +157,7 @@ textarea:focus {
 
     textarea, #texto__enviado {
         width: 100%;
+        height: 20rem;
     }
 }
 
@@ -140,7 +170,22 @@ textarea:focus {
     #texto__recebido__botoes {
         width: 100%;
     }
+
     #texto__recebido__botoes button {
         width: 50%;
+    }
+
+    textarea, #texto__enviado {
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 12px;
+    }
+
+    textarea, #texto__enviado {
+        height: 10rem;
     }
 }
