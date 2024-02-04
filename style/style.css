@@ -9,6 +9,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
+}
+
 
 button {
     width: 100%;
@@ -26,9 +32,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
-    background-size: 300% 300%;
-    animation: colors 5s ease infinite;
 
     /* background-image: url("../img/the-halal-design-studio-Gh6l07ydq40-unsplash.jpg");
     background-position: center;
@@ -126,9 +129,7 @@ textarea:focus {
 /*   RODAPÉ   */
 
 #rodape {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    
     background-color: #2B2B2B;
     color: #fff;
     padding: 1rem;
@@ -163,7 +164,6 @@ textarea:focus {
     }
 }
 
-
 /* QUERY MÍNIMA */
 
 @media screen and (min-width: 801px) {
@@ -180,7 +180,7 @@ textarea:focus {
 
 @media screen and (max-width: 800px) {
     main {
-        padding: 20px 0;
+        padding: 10px 0;
         
     }
     #container {
