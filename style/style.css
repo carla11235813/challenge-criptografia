@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
+/*    ESTILOS GERAIS    */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,37 +11,107 @@
 
 
 button {
-    width: 150px;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 24px;
     padding: 0.8rem 0;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
 }
 
+
+/*    MAIN    */
+
 main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 93vh;
     background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
     background-size: 300% 300%;
-    animation: colors 5s ease infinite; 
+    animation: colors 5s ease infinite;
+
+    /* background-image: url("../img/the-halal-design-studio-Gh6l07ydq40-unsplash.jpg");
+    background-position: center;
+    background-size: cover; */
 }
 
 #container {
-    width: 600px;
-    height: 400px;
+    width: 750px;
+    padding: 33px 0;
 
     background-color: #2B2B2B;
-
-    padding:30px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+}
 
+.container__texto {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
+}
+
+textarea, #texto__enviado {
+    border: 2px solid #8a2be2;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    resize: none;
+
+    width: 20rem;
+    height: 80%;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+
+/*   BOTÕES   */
+
+#texto__recebido__botoes, #texto__enviado__botoes {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#texto__enviado__botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#texto__recebido__botoes button:first-child {
+    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
+    border: 0;
+    height: 41%;
+}
+
+#texto__recebido__botoes button:first-child:hover {
+    opacity: 0.9;
+}
+
+#texto__recebido__botoes button:last-child, #texto__enviado__botoes button {
+    border: 2px solid blueviolet;
+    background-color: transparent;
+}
+
+#texto__recebido__botoes button:last-child:hover, #texto__enviado__botoes button:hover {
+    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
+    border: 0;
+    height: 42%;
 }
 
 #texto__enviado {
@@ -50,61 +122,11 @@ main {
     display: none;
 }
 
-textarea, #texto__enviado {
-    border: 3px solid #8a2be2;
-    border-radius: 10px;
-    background-color: transparent;
-    color: #fff;
-    padding: 20px;
-    font-size: 1.3rem;
-    resize: none;
 
-    width: 30rem;
-    height: 10rem;
-}
-
-textarea:focus {
-    outline: none;
-}
-
-.container__texto {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-#texto__recebido__botoes {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#texto__recebido__botoes button:first-child {
-    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
-    background-size: 300% 300%;
-    animation: colors 5s ease infinite;
-    border: 0;
-}
-
-#texto__recebido__botoes button:first-child:hover {
-    opacity: 0.9;
-}
-
-#texto__recebido__botoes button:last-child, #texto__enviado__botoes button {
-    border: 3px solid blueviolet;
-    background-color: transparent;
-    transition: background-image 4s;
-}
-
-#texto__recebido__botoes button:last-child:hover, #texto__enviado__botoes button:hover {
-    /*background-image: linear-gradient(45deg, blueviolet, #8696FE);*/
-    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
-    background-size: 300% 300%;
-    animation: colors 5s ease infinite;
-}
+/*   RODAPÉ   */
 
 #rodape {
+    
     background-color: #2B2B2B;
     color: #fff;
     padding: 1rem;
@@ -139,7 +161,48 @@ textarea:focus {
     }
 }
 
+/* QUERY MÍNIMA */
 
+@media screen and (min-width: 801px) {
+    main {
+    height: 93vh;
+
+
+    }
+    #container {
+        height: 440px;
+
+    }
+}
+
+/* QUERY MÁXIMA */
+
+@media screen and (max-width: 800px) {
+    main {
+        padding: 10px 0;
+        
+    }
+    #container {
+        flex-direction: column;
+        width: 90%;
+        gap: 30px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .container__texto {
+        width: 100%;
+        gap: 20px;
+    }
+
+    textarea, #texto__enviado {
+        width: 100%;
+        height: 170px;
+    }
+}
+
+
+/*
 @media screen and (max-width: 800px) {
     #container {
         width: 80%;
@@ -189,3 +252,4 @@ textarea:focus {
         height: 10rem;
     }
 }
+*/
