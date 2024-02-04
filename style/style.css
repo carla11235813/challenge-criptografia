@@ -129,7 +129,8 @@ textarea:focus {
 /*   RODAPÉ   */
 
 #rodape {
-    
+    position: relative;
+    bottom: 0;
     background-color: #2B2B2B;
     color: #fff;
     padding: 1rem;
