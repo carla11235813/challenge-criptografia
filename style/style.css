@@ -126,7 +126,9 @@ textarea:focus {
 /*   RODAPÉ   */
 
 #rodape {
-    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: #2B2B2B;
     color: #fff;
     padding: 1rem;
@@ -161,17 +163,16 @@ textarea:focus {
     }
 }
 
+
 /* QUERY MÍNIMA */
 
 @media screen and (min-width: 801px) {
     main {
-    height: 93vh;
-
-
+        height: 93vh;
     }
+
     #container {
         height: 440px;
-
     }
 }
 
@@ -179,7 +180,7 @@ textarea:focus {
 
 @media screen and (max-width: 800px) {
     main {
-        padding: 10px 0;
+        padding: 20px 0;
         
     }
     #container {
@@ -200,56 +201,3 @@ textarea:focus {
         height: 170px;
     }
 }
-
-
-/*
-@media screen and (max-width: 800px) {
-    #container {
-        width: 80%;
-        height: 90%;
-        box-sizing: border-box;
-        padding: 20px;
-    }
-    .container__texto {
-        flex-direction: column;
-    }
-
-    #texto__recebido__botoes {
-        flex-direction: row;
-    }
-
-    textarea, #texto__enviado {
-        width: 100%;
-        height: 20rem;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    #container {
-        width: 95%;
-        height: 95%;
-    }
-
-    #texto__recebido__botoes {
-        width: 100%;
-    }
-
-    #texto__recebido__botoes button {
-        width: 50%;
-    }
-
-    textarea, #texto__enviado {
-        height: 15rem;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    html {
-        font-size: 12px;
-    }
-
-    textarea, #texto__enviado {
-        height: 10rem;
-    }
-}
-*/
