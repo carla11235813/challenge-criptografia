@@ -49,7 +49,7 @@ function descriptografar(textoCriptografado) {
 }
 
 
-/*   EVENTOS   */
+/*   EVENTOS  */
 
 btnCriptografar.addEventListener("click", function() {
     if (verificarLetras(textoRecebido.value)) {
