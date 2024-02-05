@@ -9,8 +9,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --cor-principal: #8a2be2;
+    --gradient: #4942E4, #8a2be2, #8696FE, #C4B0FF;
+    --cor-destaque: #2B2B2B;
+    --cor-contraste: #fff;
+    --border: 2px solid var(--cor-principal);
+
+}
+
 html, body {
-    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
+    background-image: linear-gradient(45deg, var(--gradient));
     background-size: 300% 300%;
     animation: colors 5s ease infinite;
 }
@@ -20,7 +29,7 @@ button {
     width: 100%;
     border-radius: 24px;
     padding: 0.8rem 0;
-    color: #fff;
+    color: var(--cor-contraste);
     font-size: 1rem;
     cursor: pointer;
 }
@@ -32,17 +41,27 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
 
-    /* background-image: url("../img/the-halal-design-studio-Gh6l07ydq40-unsplash.jpg");
-    background-position: center;
-    background-size: cover; */
+#texto__aviso {
+    text-align: center;
+    color: #fff;
+    background-color: #2B2B2B;
+    width: 750px;
+    border-radius: 15px;
+    padding: 15px ;
+}
+
+#texto__aviso i {
+    color: var(--cor-principal);
 }
 
 #container {
     width: 750px;
     padding: 33px 0;
-
-    background-color: #2B2B2B;
+    background-color: var(--cor-destaque);
     border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -59,10 +78,10 @@ main {
 }
 
 textarea, #texto__enviado {
-    border: 2px solid #8a2be2;
+    border: var(--border);
     border-radius: 10px;
     background-color: transparent;
-    color: #fff;
+    color: var(--cor-contraste);
     padding: 15px;
     font-size: 1.2rem;
     resize: none;
@@ -93,7 +112,7 @@ textarea:focus {
 }
 
 #texto__recebido__botoes button:first-child {
-    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
+    background-image: linear-gradient(45deg, var(--gradient));
     background-size: 300% 300%;
     animation: colors 5s ease infinite;
     border: 0;
@@ -105,12 +124,12 @@ textarea:focus {
 }
 
 #texto__recebido__botoes button:last-child, #texto__enviado__botoes button {
-    border: 2px solid blueviolet;
+    border: var(--border);
     background-color: transparent;
 }
 
 #texto__recebido__botoes button:last-child:hover, #texto__enviado__botoes button:hover {
-    background-image: linear-gradient(45deg, #4942E4, blueviolet, #8696FE, #C4B0FF);
+    background-image: linear-gradient(45deg, var(--gradient));
     background-size: 300% 300%;
     animation: colors 5s ease infinite;
     border: 0;
@@ -132,8 +151,8 @@ textarea:focus {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #2B2B2B;
-    color: #fff;
+    background-color: var(--cor-destaque);
+    color: var(--cor-contraste);
     padding: 1rem;
 }
 
@@ -142,7 +161,7 @@ textarea:focus {
 }
 
 #rodape a {
-    color: #8a2be2;
+    color: var(--cor-principal);
     font-weight: 600;
     text-decoration: none;
 }
@@ -178,6 +197,10 @@ textarea:focus {
     }
 }
 
+@media screen and (min-width: 400px) {
+    
+}
+
 /* QUERY MÁXIMA */
 
 @media screen and (max-width: 800px) {
@@ -185,6 +208,12 @@ textarea:focus {
         padding: 10px 0;
         
     }
+
+    #texto__aviso {
+        width: 90%;
+        margin-top: 20px;
+    }
+
     #container {
         flex-direction: column;
         width: 90%;
@@ -202,4 +231,10 @@ textarea:focus {
         width: 100%;
         height: 170px;
     }
+
+    #rodape {
+        position: relative;
+    }
 }
+
+
