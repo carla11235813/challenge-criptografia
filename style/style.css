@@ -22,6 +22,12 @@ html, body {
     background-image: linear-gradient(45deg, var(--gradient));
     background-size: 300% 300%;
     animation: colors 5s ease infinite;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100vh;
 }
 
 
@@ -41,6 +47,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
 }
@@ -148,9 +155,9 @@ textarea:focus {
 /*   RODAPÉ   */
 
 #rodape {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
     background-color: var(--cor-destaque);
     color: var(--cor-contraste);
     padding: 1rem;
@@ -232,9 +239,9 @@ textarea:focus {
         height: 170px;
     }
 
-    #rodape {
+    /* #rodape {
         position: relative;
-    }
+    } */
 }
 
 
