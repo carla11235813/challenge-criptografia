@@ -60,7 +60,7 @@ As "chaves" de criptografia utilizadas neste projeto são:
 
 ## Acesso ao projeto
 
-Você pode acessar o proejto atráves do [link da página](https://challenge-criptografia-blue.vercel.app/), [código fonte](https://github.com/carla11235813/challenge-criptografia/) ou [baixá-lo](https://github.com/carla11235813/challenge-criptografia/archive/refs/heads/main.zip)
+Você pode acessar o proejto atráves do [link da página]([https://challenge-criptografia-blue.vercel.app/](https://carla11235813.github.io/challenge-criptografia/)), [código fonte](https://github.com/carla11235813/challenge-criptografia/) ou [baixá-lo](https://github.com/carla11235813/challenge-criptografia/archive/refs/heads/main.zip)
 
 ## Licença
 
