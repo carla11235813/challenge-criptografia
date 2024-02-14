@@ -1,6 +1,6 @@
 ## Aplicação de Criptografia de Texto
 
-Esse projeto faz parte do Challenge do [programa ONE](https://www.oracle.com/br/education/oracle-next-education/partnerships/). Os challenges são uma forma de implementar uma aprendizagem baseadas em desafios com o objetivo de testar o conhecimento de forma prática e consolidar o aprendizado.
+Esse projeto faz parte do Challenge do [programa ONE](https://www.oracle.com/br/education/oracle-next-education/). Os challenges são uma forma de implementar uma aprendizagem baseadas em desafios com o objetivo de testar o conhecimento de forma prática e consolidar o aprendizado.
 
 Esta é uma aplicação simples que permite criptografar e descriptografar textos, permitindo a troca de mensagens secretas entre pessoas que conhecem a chave de criptografia utilizada
 
