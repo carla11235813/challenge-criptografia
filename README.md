@@ -22,22 +22,22 @@ As "chaves" de criptografia utilizadas neste projeto são:
 
 ## Funcionalidades
 
-#### ✅ Criptografar texto: Converte o texto inserido para a versão criptografada de acordo com as regras especificadas.
+✅ **Criptografar texto:** Converte o texto inserido para a versão criptografada de acordo com as regras especificadas.
 
-#### ✅ Descriptografar texto: Converte o texto criptografado de volta para a versão original.
+✅ **Descriptografar texto:** Converte o texto criptografado de volta para a versão original.
 
-#### ✅ Interface amigável: A aplicação oferece campos para inserção do texto a ser criptografado ou descriptografado e permite ao usuário escolher entre as duas opções.
+✅ **Interface amigável:** A aplicação oferece campos para inserção do texto a ser criptografado ou descriptografado e permite ao usuário escolher entre as duas opções.
 
-#### ✅ Exibição do resultado: O texto criptografado ou descriptografado é exibido na tela para o usuário.
+✅ **Exibição do resultado:** O texto criptografado ou descriptografado é exibido na tela para o usuário.
 
-#### ✅ Botão de copiar: Um botão adicional permite ao usuário copiar o texto criptografado/descriptografado para a área de transferência.
+✅ **Botão de copiar:** Um botão adicional permite ao usuário copiar o texto criptografado/descriptografado para a área de transferência.
 
 
 ## Requisitos
 
-#### 🔶 Funciona apenas com letras minúsculas.
+🔶 Funciona apenas com letras minúsculas.
 
-#### 🔶 Não utiliza letras com acentos ou caracteres especiais.
+🔶 Não utiliza letras com acentos ou caracteres especiais.
 
 
 ## Aplicação
@@ -49,13 +49,9 @@ As "chaves" de criptografia utilizadas neste projeto são:
 
 ## Tecnologias e Ferramentas
 
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" width="50px"/>
-  
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" width="50px"/>
-  
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="50px"/>
-</p>      
+![Static Badge](https://img.shields.io/badge/css3-%231572B6?style=for-the-badge&logo=css3&logoColor=%23fff)
+![Static Badge](https://img.shields.io/badge/html5-%23E34F26?style=for-the-badge&logo=html5&logoColor=%23fff)
+![Static Badge](https://img.shields.io/badge/javascript-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23000)   
 
 
 ## Acesso ao projeto
